@@ -100,8 +100,7 @@ class Home extends Component  {
         finally {
             this.setState({ isLoadingPlece: false });            
         }  
-    }
-   
+    }   
     render() {       
         const { isLoadingHotel,isLoadingPlece, data, city, place, isShowListCity } = this.state; 
        
