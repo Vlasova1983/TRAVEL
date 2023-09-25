@@ -15,11 +15,11 @@ const Layout = lazy(() => import('./component/Layout/Layout'));
 
 const App = () => { 
   return(
-    <BrowserRouter base="">    
+    <BrowserRouter >    
       <Suspense > 
           <Layout>            
             <Routes >              
-            <Route path="/" element={<Home/>} />
+            <Route path="/TRAVEL" element={<Home/>} />
               <Route path="/:travelId" element={<OneCardPage />} />
               <Route path="stays" element={< Stays/>}/> 
               <Route path="flights" element={< Flights/>}/>

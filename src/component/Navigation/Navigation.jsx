@@ -6,7 +6,7 @@ const Navigation = () => {
        
     return (      
         <nav className={styles.nav} >
-            <Link   to="" className={`${styles.link} ${
+            <Link   to="/TRAVEL" className={`${styles.link} ${
                   location.pathname ==='/'
                   ? styles.activ
                   :""                
