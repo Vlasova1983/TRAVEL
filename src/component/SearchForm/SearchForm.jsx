@@ -1,6 +1,7 @@
 import { useState  } from 'react';
 import { useFormik } from 'formik';
 import { formatDate } from '../../utils/helpers/date/';
+import { Loader } from "../../component/Loader/Loader";
 import { Calendar } from '../Calendar/Calendar';
 import FormSchema from './FormSchema';
 // import { ReactComponent as IconSearch } from './akar-icons_search.svg';
@@ -13,21 +14,37 @@ import SelectList from '../SelectList/SelectList';
 import styles from '../SearchForm/SearchForm.module.css';
 
 const listCategory = [1, 2, 3, 4, 5,6];
-
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'fa73223830mshf481b8f164cb924p1cbd2ajsn68731027f3fd',
+        'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
+	}
+}; 
 const SearchForm = () => { 
- 
     const [isShowListCategory, setIsShowCategory] = useState(false);
     const [isShowDateIn, setIsShowDateIn] = useState(false);
     const [isShowDateOut, setIsShowDateOut] = useState(false);
     const [dateIn, setDateIn] = useState(new Date());
     const [dateOut, setDateOut] = useState(new Date());   
-   
-    const onSubmit = async (values) => {        
-        localStorage.setItem('checkin_date', JSON.stringify(values.checkin_date));
-        localStorage.setItem('checkout_date', JSON.stringify(values.checkout_date));
-        localStorage.setItem('adults_number', JSON.stringify(values.adults_number));
-   
-        window.location.reload()
+    const [isLoadingHotel, setIsisLoadingHotel] = useState(false);
+
+    const onSubmit = async (values) => {
+        setIsisLoadingHotel(true)
+        const url=`https://booking-com.p.rapidapi.com/v1/hotels/search?checkin_date=2023-10-15&dest_type=city&units=metric&checkout_date=2023-10-20&adults_number=${values.adults_number}&order_by=popularity&dest_id=-553173&filter_by_currency=AED&locale=en-gb&room_number=1&children_number=2&children_ages=5%2C0&categories_filter_ids=class%3A%3A2%2Cclass%3A%3A4%2Cfree_cancellation%3A%3A1&page_number=0&include_adjacency=true`;       
+        try {    
+        const response = await fetch( url, options);
+        const result = await response.text();
+        const travels = JSON.parse(result);        
+            localStorage.setItem('data', JSON.stringify(travels.result)) ;
+            localStorage.setItem('adults_number', JSON.stringify(values.adults_number));
+            localStorage.setItem('checkin_date', JSON.stringify(values.checkin_date));
+            localStorage.setItem('checkout_date', JSON.stringify(values.checkout_date));
+            window.location.reload()
+        } catch (e) {    
+            return e.message;
+        }        
+        
     }
     
      const onChangeInput = e => {    
@@ -69,8 +86,10 @@ const SearchForm = () => {
     }    
   }   
 
-    return (       
-        <form className={styles.form} onSubmit={formik.handleSubmit}>
+    return (
+        <div className={styles.conteiner}>
+            {isLoadingHotel && <Loader/>}
+            <form className={styles.form} onSubmit={formik.handleSubmit}>
             {/* <div className={styles.wrap}>                    
                 <label className=className={styles.box}>
                     <IconSearch  className={styles.searchIcon} aria-label={'icon-search'}/>                                   
@@ -228,7 +247,9 @@ const SearchForm = () => {
                 } 
             </div>                
             <button  type="submit"  className={styles.submitButton}>Search </button> 
-        </form>               
+            </form>
+        </div>
+                       
     ) 
 }
 

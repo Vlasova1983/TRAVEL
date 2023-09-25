@@ -53,8 +53,7 @@ class Home extends Component  {
         
         const url=`https://booking-com.p.rapidapi.com/v1/hotels/search?checkin_date=2023-10-15&dest_type=city&units=metric&checkout_date=2023-10-20&adults_number=${this.state.adults_number}&order_by=popularity&dest_id=-553173&filter_by_currency=AED&locale=en-gb&room_number=1&children_number=2&children_ages=5%2C0&categories_filter_ids=class%3A%3A2%2Cclass%3A%3A4%2Cfree_cancellation%3A%3A1&page_number=0&include_adjacency=true`;   
         if (this.state.adults_number !== JSON.parse(localStorage.getItem('adults_number'))) {    
-        try {  
-                   
+        try {                  
             const response = await fetch(url, options);
             const result = await response.text();           
             const travels = JSON.parse(result);            
