@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/TRAVEL/static/css/main.6f2ac88a.css",
-    "main.js": "/TRAVEL/static/js/main.16d9f7ea.js",
-    "static/css/544.db6f1ce9.chunk.css": "/TRAVEL/static/css/544.db6f1ce9.chunk.css",
-    "static/js/544.af48cf56.chunk.js": "/TRAVEL/static/js/544.af48cf56.chunk.js",
+    "main.js": "/TRAVEL/static/js/main.7ab2b569.js",
+    "static/css/914.fb344157.chunk.css": "/TRAVEL/static/css/914.fb344157.chunk.css",
+    "static/js/914.407f31bd.chunk.js": "/TRAVEL/static/js/914.407f31bd.chunk.js",
     "static/css/584.b61b7308.chunk.css": "/TRAVEL/static/css/584.b61b7308.chunk.css",
     "static/js/584.78adcf41.chunk.js": "/TRAVEL/static/js/584.78adcf41.chunk.js",
     "static/css/610.353c7548.chunk.css": "/TRAVEL/static/css/610.353c7548.chunk.css",
@@ -14,10 +14,10 @@
     "static/js/982.d63defad.chunk.js": "/TRAVEL/static/js/982.d63defad.chunk.js",
     "static/css/709.32a4aad7.chunk.css": "/TRAVEL/static/css/709.32a4aad7.chunk.css",
     "static/js/709.37bf718a.chunk.js": "/TRAVEL/static/js/709.37bf718a.chunk.js",
-    "static/css/309.8d42a049.chunk.css": "/TRAVEL/static/css/309.8d42a049.chunk.css",
-    "static/js/309.c972e7a7.chunk.js": "/TRAVEL/static/js/309.c972e7a7.chunk.js",
-    "static/js/415.f9bb7e80.chunk.js": "/TRAVEL/static/js/415.f9bb7e80.chunk.js",
+    "static/css/309.e785bda9.chunk.css": "/TRAVEL/static/css/309.e785bda9.chunk.css",
+    "static/js/309.da58866a.chunk.js": "/TRAVEL/static/js/309.da58866a.chunk.js",
     "static/js/735.1e87c558.chunk.js": "/TRAVEL/static/js/735.1e87c558.chunk.js",
+    "static/js/17.800d8c86.chunk.js": "/TRAVEL/static/js/17.800d8c86.chunk.js",
     "static/js/740.1e27e6b2.chunk.js": "/TRAVEL/static/js/740.1e27e6b2.chunk.js",
     "static/media/fon.jpg": "/TRAVEL/static/media/fon.4278901f663765d3b41a.jpg",
     "static/media/instagram.svg": "/TRAVEL/static/media/instagram.a297bf17584a486c1e5c5636f825b293.svg",
@@ -38,9 +38,9 @@
     "static/media/chevron-down-small.svg": "/TRAVEL/static/media/chevron-down-small.cb0741bc32f8310ce0b64c3ecca2ea6f.svg",
     "static/media/chevron-up-small.svg": "/TRAVEL/static/media/chevron-up-small.8a8c055281fa2c93e65a176317c5536f.svg",
     "main.6f2ac88a.css.map": "/TRAVEL/static/css/main.6f2ac88a.css.map",
-    "main.16d9f7ea.js.map": "/TRAVEL/static/js/main.16d9f7ea.js.map",
-    "544.db6f1ce9.chunk.css.map": "/TRAVEL/static/css/544.db6f1ce9.chunk.css.map",
-    "544.af48cf56.chunk.js.map": "/TRAVEL/static/js/544.af48cf56.chunk.js.map",
+    "main.7ab2b569.js.map": "/TRAVEL/static/js/main.7ab2b569.js.map",
+    "914.fb344157.chunk.css.map": "/TRAVEL/static/css/914.fb344157.chunk.css.map",
+    "914.407f31bd.chunk.js.map": "/TRAVEL/static/js/914.407f31bd.chunk.js.map",
     "584.b61b7308.chunk.css.map": "/TRAVEL/static/css/584.b61b7308.chunk.css.map",
     "584.78adcf41.chunk.js.map": "/TRAVEL/static/js/584.78adcf41.chunk.js.map",
     "610.353c7548.chunk.css.map": "/TRAVEL/static/css/610.353c7548.chunk.css.map",
@@ -51,14 +51,14 @@
     "982.d63defad.chunk.js.map": "/TRAVEL/static/js/982.d63defad.chunk.js.map",
     "709.32a4aad7.chunk.css.map": "/TRAVEL/static/css/709.32a4aad7.chunk.css.map",
     "709.37bf718a.chunk.js.map": "/TRAVEL/static/js/709.37bf718a.chunk.js.map",
-    "309.8d42a049.chunk.css.map": "/TRAVEL/static/css/309.8d42a049.chunk.css.map",
-    "309.c972e7a7.chunk.js.map": "/TRAVEL/static/js/309.c972e7a7.chunk.js.map",
-    "415.f9bb7e80.chunk.js.map": "/TRAVEL/static/js/415.f9bb7e80.chunk.js.map",
+    "309.e785bda9.chunk.css.map": "/TRAVEL/static/css/309.e785bda9.chunk.css.map",
+    "309.da58866a.chunk.js.map": "/TRAVEL/static/js/309.da58866a.chunk.js.map",
     "735.1e87c558.chunk.js.map": "/TRAVEL/static/js/735.1e87c558.chunk.js.map",
+    "17.800d8c86.chunk.js.map": "/TRAVEL/static/js/17.800d8c86.chunk.js.map",
     "740.1e27e6b2.chunk.js.map": "/TRAVEL/static/js/740.1e27e6b2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f2ac88a.css",
-    "static/js/main.16d9f7ea.js"
+    "static/js/main.7ab2b569.js"
   ]
 }
