@@ -87,8 +87,7 @@ const SearchForm = () => {
   }   
 
     return (
-        <div className={styles.conteiner}>
-            {isLoadingHotel && <Loader/>}
+        <div className={styles.conteiner}>            
             <form className={styles.form} onSubmit={formik.handleSubmit}>
             {/* <div className={styles.wrap}>                    
                 <label className=className={styles.box}>
@@ -248,6 +247,7 @@ const SearchForm = () => {
             </div>                
             <button  type="submit"  className={styles.submitButton}>Search </button> 
             </form>
+            {isLoadingHotel && <Loader/>}
         </div>
                        
     ) 
