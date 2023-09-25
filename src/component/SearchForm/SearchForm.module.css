@@ -1,0 +1,421 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative; 
+    margin-top: 20px;   
+}
+
+.containerDate{
+    display: flex;
+    justify-content:space-around;    
+    border-radius: 26px;
+}
+
+.wrap{
+    position: relative;
+    text-align: center;    
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 26px; 
+    padding-top: 12px;   
+}
+
+.input {   
+    text-align: center;
+    width: 90%;
+    padding: 4px;
+    margin-bottom: 5px;   
+    background-color:rgba(255, 255, 255, 0);
+    color: var(--text-color-akcent);
+    font-weight:400;
+    font-size: 12px;
+    line-height: 18.4px;
+    border-radius: 32px;    
+    border: 0;   
+    cursor: pointer;     
+}
+
+.input::placeholder {      
+    font-weight:400;
+    font-size: 12px;
+    line-height: 18.4px;
+    color: var(--text-color-akcent);
+    opacity: 100%;
+    text-overflow: ellipsis;
+}
+
+.errorInput {
+    border:1px solid var(--color-border-error);
+}
+
+.icon {
+    pointer-events: none;
+}
+
+.searchIcon{
+    position: absolute;
+    top:14px;
+    left: 40px;
+} 
+
+.deleteName{
+    position: absolute; 
+    top:12px;
+    right: 0px;  
+    stroke:var(--text-color-akcent);   
+    transition:  stroke 300ms cubic-bezier(0.4, 0, 0.2, 1)   
+}
+
+.deleteName:focus,.deleteName:hover{
+    stroke: var(--button-color);   
+}
+.datainDelete{
+    position: absolute;
+    top: 12px;
+    left: 80%;
+    stroke: var(--text-color-akcent);
+    transition: stroke 300ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.datainDelete:focus,
+.datainDelete:hover {
+    stroke: var(--button-color);
+}
+
+.dataoutDelete {
+    position: absolute;
+    top: 12px;
+    left:80%;
+    stroke: var(--text-color-akcent);
+    transition: stroke 300ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.dataoutDelete:focus,
+.dataoutDelete:hover {
+    stroke: var(--button-color);
+}
+.deleteCategory{
+    position: absolute; 
+    top:14px;
+    left:60%;  
+    stroke:var(--text-color-akcent);   
+    transition:  stroke 300ms cubic-bezier(0.4, 0, 0.2, 1)   
+}
+
+.deleteCategory:focus,.deleteCategory:hover{
+    stroke: var(--button-color);   
+}
+
+.avatarIcon{
+    position: absolute;
+    top: 12px;
+    left: 30%;    
+}
+.calendarIcon{
+    position: absolute;
+    left:10%;   
+}
+
+.dateButton{
+    position: absolute;
+    left:70%;    
+    stroke: var(--text-color-akcent);
+    transition: stroke 300ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.selectButton{
+    position: absolute; 
+    top: 14px;
+    left: 55%;
+    stroke:var(--text-color-akcent);    
+    transition:  stroke 300ms cubic-bezier(0.4, 0, 0.2, 1) 
+}
+
+.selectButton:focus,.selectButton:hover{
+    stroke: var(--button-color);
+}
+.submitButton{
+    color: var(--text-color-akcent);
+    width: 100%;
+    padding: 12px 32px;
+    background-color: var(--button-color);
+   
+    font-weight:700;
+    font-size: 16px;
+    line-height: 18.4px;
+    border-radius: 32px;
+    transition:  color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submitButton:focus,.submitButton:hover{
+    color: var(--button-color);
+    background-color: var(--text-color-akcent);
+}
+
+.label{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    opacity: 0%;
+    /* margin-bottom: 5px; */
+}
+
+.errorLabel {
+    color: var(--color-border-error);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    margin-bottom: 5px;
+}
+.conteinerCalendar {
+    z-index: 102;
+    position: absolute;
+    top:50px;
+    margin-top: 8px;
+    width: 200px;
+    border-radius: 11px;
+    text-transform: capitalize;
+    box-shadow: 0px 0px 14px 0px #00000012;
+    background-color: var(--background-color);
+    padding: 20px;
+    border: 1px solid var(--background-color);
+}
+
+.conteinerButton {
+    display: flex;
+    justify-content: right;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.canselButton {
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1),
+        background 300ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.chooseButton {
+    color: var(--background-color);
+    background-color: var(--button-color);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 26px;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1), background 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.chooseButton:hover,
+.chooseButton:focus {
+    background: var(--button-color);
+    box-shadow: 2px 4px 9px 0px rgba(166, 141, 174, 0.28);
+}
+
+
+@media (min-width: 768px) and (max-width: 1279px){ 
+    .form { 
+        position: relative;
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; 
+        gap: 10px;   
+        margin-top: 44px;
+        background-color:rgba(255, 255, 255, 0.4);
+        padding: 4px;      
+        border-radius: 18px;
+        transition:  box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1),  opacity 300ms cubic-bezier(0.4, 0, 0.2, 1)     
+    }   
+   
+    .wrap{              
+        display: flex;
+        flex-direction: column;       
+        align-items: center;
+        padding: 10px 0 0 0;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .containerDate{
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .input {            
+        background-color:rgba(255, 255, 255, 0);   
+        text-align: left;       
+        margin-bottom: 0;
+        padding: 16px 0 16px 30px; 
+        width: 70%;      
+    }  
+
+    .input::placeholder{       
+        font-size: 17.71px;
+        line-height: 20.37px;        
+    }    
+    .searchIcon{
+        left:10px;
+        top:15px;      
+    } 
+    
+    .avatarIcon {
+        position: absolute;
+        left:20px; 
+        top: 23px;
+    }
+    
+    .calendarIcon {
+        position: absolute;
+        top: 23px; 
+        
+    }
+    .deleteName{
+        top: 12px;     
+    }
+
+    .dateButton {
+        top: 20px;
+        left: 125px;       
+    }
+
+    .datainDelete {           
+        top: 20px;
+        left: 150px;
+    }
+    .dataoutDelete {
+        top: 20px;
+        left: 150px;
+    }
+    .selectButton{
+        position: absolute;
+        top: 20px; 
+        left: 120px;
+    }
+
+    .deleteCategory{ 
+        top: 20px; 
+        left: 150px;
+    }   
+
+    .submitButton{       
+        color: var(--button-color);
+        background-color: var(--text-color-akcent);
+        width: 160px;
+        height: 50px;    
+        font-weight:700;
+        font-size: 17.71px;
+        line-height: 20.37px;        
+    }
+    .submitButton:focus,.submitButton:hover{
+        color: var(--text-color-akcent);
+        background-color: var(--button-color);
+    }
+    .errorLabel {        
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .label{        
+        margin-bottom: 0;
+    }    
+}
+
+
+@media  (min-width: 1280px){
+    .form { 
+        position: relative;
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; 
+        gap: 10px;   
+        margin-top: 44px;
+        background-color:rgba(255, 255, 255, 0.4);
+        padding: 4px 18px;      
+        border-radius: 18px;
+        transition:  box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1),  opacity 300ms cubic-bezier(0.4, 0, 0.2, 1)     
+    }    
+   
+    .box{
+        position: relative;
+    }
+    .wrap{       
+        display: flex;
+        flex-direction: column;       
+        align-items: center;
+        padding: 10px 0 0 0;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .input {            
+        background-color:rgba(255, 255, 255, 0);   
+        text-align: left;       
+        margin-bottom: 0;
+        padding: 16px 0 16px 35px; 
+        width: 100%;      
+    }  
+
+    .input::placeholder{       
+        font-size: 17.71px;
+        line-height: 20.37px;        
+    }    
+    .searchIcon{
+        left:10px;
+        top:15px;      
+    }
+    
+    .avatarIcon {
+        
+        left: 10px;
+        top: 15px;
+    }
+    
+    .calendarIcon {
+        position: absolute;
+        top: 15px;
+        left: 5px;
+    }
+
+    .deleteName{
+        top: 12px;
+        right: -30px;     
+    }
+    .selectButton{
+        position: absolute;
+        top: 12px; 
+        right: 0;
+    }
+    .dateButton {
+        top: 10px;
+        
+    }
+    .deleteCategory{ 
+        top: 12px; 
+        right: -80px;
+    }   
+
+    .submitButton{       
+        color: var(--button-color);
+        background-color: var(--text-color-akcent);
+        width: 160px;
+        height: 50px;    
+        font-weight:700;
+        font-size: 17.71px;
+        line-height: 20.37px;        
+    }
+    .submitButton:focus,.submitButton:hover{
+        color: var(--text-color-akcent);
+        background-color: var(--button-color);
+    }
+    .errorLabel {        
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .label{        
+        margin-bottom: 0;
+    }    
+    
+}

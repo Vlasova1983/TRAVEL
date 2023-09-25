@@ -1,0 +1,43 @@
+.card {
+    width:100%;
+    border-radius: 18px;
+    color: var(--text-color); 
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 41px;    
+    box-shadow: 0px 4.428116321563721px 17.712465286254883px 0px #9E9E9E40;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.conteiner {    
+    padding: 27px 18px;
+}
+
+.boxImage {
+    overflow: hidden;    
+    text-align: center;
+    border-radius: 18px;
+}
+
+.image {
+    background-size: 100% auto;
+    border-radius: 18px;
+}
+
+.boxText {
+    margin: 20px;
+    display: flex;   
+   justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.text {
+    display: flex;
+    margin-top: 20px;
+    opacity: 50%;
+    align-items: center;
+}
+
+

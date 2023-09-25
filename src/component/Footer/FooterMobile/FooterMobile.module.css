@@ -1,0 +1,39 @@
+.link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    color:var(--text-color);
+    fill:var(--text-color); 
+    stroke:var(--text-color);
+    opacity: 50%;
+    gap: 10px;
+    
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    transition:  color 300ms cubic-bezier(0.4, 0, 0.2, 1),fill 300ms cubic-bezier(0.4, 0, 0.2, 1),stroke 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:focus, .link:hover{
+    color:var(--button-color);
+    fill:var(--button-color) ;
+    stroke:var(--button-color);
+}
+
+.activ{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:var(--button-color);
+    fill:var(--button-color) ;
+    stroke:var(--button-color);   
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px; 
+    opacity: 100%;
+}
