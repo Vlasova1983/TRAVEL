@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[523],{5523:function(e,s,t){t.r(s),t.d(s,{default:function(){return c}});var n={titel:"Flights_titel__U4-zj"},i=t(184),c=function(){return(0,i.jsx)(i.Fragment,{children:(0,i.jsxs)("section",{className:n.conteiner,children:[(0,i.jsxs)("div",{className:n.conteinerTitel,children:[(0,i.jsx)("div",{className:n.conteinerButton}),(0,i.jsx)("h2",{className:n.titel,children:"Flights"})]}),(0,i.jsx)("div",{className:n.wrapper})]})})}}}]);
+//# sourceMappingURL=523.badcb59a.chunk.js.map
